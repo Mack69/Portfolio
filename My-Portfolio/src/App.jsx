@@ -1,12 +1,15 @@
-import React from 'react'
+import React from "react";
+import { ThemeProvider } from "./context/ThemeContext";
+import Navbar from "./components/Section/Navbar";
 
 const App = () => {
-
   return (
-    <div>
-      App
-    </div>
-  )
-}
+    <ThemeProvider>
+      <div>
+        <Navbar/>
+      </div>
+    </ThemeProvider>
+  );
+};
 
-export default App
+export default App;
