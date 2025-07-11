@@ -36,15 +36,15 @@ export const SKILLS_CATEGORY = [
     ],
   },
   {
-    title: "Backend",
+    title: "Frameworks & Libraries",
     icon: Server,
     description: "Building robust server-side solutions",
     skills: [
       { name: "Node.js", level: 90, color: "bg-green-500" },
       { name: "Express.js", level: 88, color: "bg-gray-700" },
-      { name: "Python", level: 85, color: "bg-yellow-500" },
-      { name: "GraphQL", level: 80, color: "bg-pink-600" },
-      { name: "REST APIs", level: 92, color: "bg-orange-500" },
+      { name: "React.js", level: 85, color: "bg-yellow-500" },
+      { name: "Tailwind CSS", level: 80, color: "bg-pink-600" },
+      { name: "Framer Motion", level: 92, color: "bg-orange-500" },
     ],
   },
   {
