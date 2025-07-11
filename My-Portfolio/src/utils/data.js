@@ -24,15 +24,15 @@ import proj1 from "../assets/images/harmonize.jpg";
 
 export const SKILLS_CATEGORY = [
   {
-    title: "Frontend",
+    title: "Programming languages",
     icon: Code2,
     description: "Crafting beautiful, responsive user interfaces",
     skills: [
-      { name: "React", level: 95, color: "bg-blue-500" },
-      { name: "TypeScript", level: 90, color: "bg-blue-600" },
-      { name: "Next.js", level: 88, color: "bg-gray-800" },
-      { name: "Tailwind CSS", level: 92, color: "bg-cyan-500" },
-      { name: "Framer Motion", level: 85, color: "bg-pink-500" },
+      { name: "Java", level: 95, color: "bg-blue-500" },
+      { name: "JavaScript", level: 90, color: "bg-blue-600" },
+      { name: "Python", level: 80, color: "bg-gray-800" },
+      { name: "C", level: 70, color: "bg-cyan-500" },
+      { name: "SQL", level: 80, color: "bg-pink-500" },
     ],
   },
   {
