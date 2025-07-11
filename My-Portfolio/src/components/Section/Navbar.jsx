@@ -32,7 +32,7 @@ const Navbar = () => {
           <Code2 size={24} className="text-blue-600" />{" "}
           <span
             className={`text-lg ml-1  ${
-              isDarkMode ? "text-gray-300" : "text-gray-900"
+              isDarkMode ? "text-gray-300" : "text-gray-700"
             }`}
           >
             Mayukh Ghosh
@@ -71,7 +71,66 @@ const Navbar = () => {
             {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
           </motion.button>
         </div>
+            
+        {/* Mobile Menu Button */}
+        <div className="md:hidden flex items-center space-x-3">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => toggleDarkMode(isDarkMode ? "Light" : "dark")}
+            className={`p-2 rounded-full transition-colors ${
+              isDarkMode
+                ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+            }`}
+          >
+            {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
+          </motion.button>
+          <motion.button 
+            whileHover={{ scale: 1.10 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setIsMenuOpen(!isMenuopen)}
+            className={`p-2 rounded-full transition-colors ${
+              isDarkMode
+                ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+            }`}
+            >
+              {isMenuopen ? <X size={20} /> : <Menu size={20}/>}
+            </motion.button>
+        </div>
       </div>
+            
+       {/* Mobile Menu */}
+       <AnimatePresence>
+        {isMenuopen && (
+          <motion.div
+            initial={{opacity: 0,y:-20}}
+            animate={{opacity :1, y:0}}
+            exit={{opacity: 0, y:-2}}
+            className={`md:hidden mt-4 p-4 rounded-lg ${
+              isDarkMode? "bg-gray-900" : "bg-white"
+              } border ${isDarkMode ? "bg-gray-800" : "bg-gray-200"
+            }`}
+          >
+            {["Home", "Skills", "Experience", "Projects", "About", "Contact"].map((item) =>(
+
+               <motion.button
+                key={item}
+                whileHover={{ x :5 }}
+                onClick={() => scrollToSection(item.toLowerCase())}
+                className={`block w-full text-left py-2 text-sm uppercase tracking-wider transition-colors ${
+                  isDarkMode
+                    ? "text-gray-400 hover:text-blue-500"
+                    : "text-gray-600 hover:text-gray-900"
+                }`}
+              >
+                {item}
+              </motion.button>
+            ))}
+          </motion.div>
+        )}
+       </AnimatePresence>
     </motion.nav>
   );
 };
