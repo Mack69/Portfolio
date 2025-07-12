@@ -47,10 +47,10 @@ const Navbar = () => {
                 key={item}
                 whileHover={{ y: -2 }}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className={`text-sm font-bold uppercase tracking-wider transition-colors ${
+                className={`text-sm font-medium uppercase tracking-wider transition-colors ${
                   isDarkMode
-                    ? "text-gray-300 hover:text-blue-500"
-                    : "text-gray-500 hover:text-gray-900"
+                    ? "text-gray-400 hover:text-blue-500"
+                    : "text-gray-600 hover:text-gray-900"
                 }`}
               >
                 {item}

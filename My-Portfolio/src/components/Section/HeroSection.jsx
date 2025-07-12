@@ -71,8 +71,12 @@ const HeroSection = () => {
       }`}
     >
       {/* Hero Section */}
-      <motion.section id="home" style={{ y: heroY }} className="">
-        <div className="">
+      <motion.section
+        id="home"
+        style={{ y: heroY }}
+        className="min-h-screen flex items-center justify-center relative px-6 pt-10"
+      >
+        <div className="absolute insert-0 overflow-hidden">
           <motion.div
             animate={{
               scale: [1, 1.1, 1],
@@ -103,21 +107,18 @@ const HeroSection = () => {
           />
         </div>
 
-        <div className="">
+        <div className="max-w-7xl mx-auto w-full z-10 mt-20">
           {/* Mobile Layout – Centered */}
-          <div className="">
+          <div className="block lg:hidden">
             <motion.div
               initial="hidden"
               animate="visible"
               variants={containerVariants}
-              className=""
+              className="text-center"
             >
               {/* Profile Image */}
-              <motion.div
-                variants={imageVariants}
-                className="relative flex justify-center items-center mt-32"
-              >
-                <div className="">
+              <motion.div variants={imageVariants} className="mb-8">
+                <div className="w-32 h-32 mx-auto relative">
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     className={`w-32 h-32 rounded-2xl overflow-hidden border-4 ${
@@ -138,7 +139,7 @@ const HeroSection = () => {
                       repeat: Infinity,
                       ease: "linear",
                     }}
-                    className=""
+                    className="absolute -inset-2 rounded-3xl border border-blue-500/20"
                   />
                 </div>
               </motion.div>
@@ -153,14 +154,17 @@ const HeroSection = () => {
                 Software Developer
               </motion.div>
 
-              <motion.h1 variants={itemVariants} className="">
+              <motion.h1
+                variants={itemVariants}
+                className="text-3xl md:text-5xl font-light mb-7 leading-tight"
+              >
                 <span
                   className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                 >
                   Building digital
                 </span>
-                <span className="block text-4xl font-extrabold leading-tight">
-                  experiences.
+                <span className="text-3xl font-bold text-blue-500 leading-tight ml-2">
+                  experiences
                 </span>
                 <br />
                 <span
@@ -181,12 +185,15 @@ const HeroSection = () => {
               </motion.p>
 
               {/* CTA Buttons – Mobile */}
-              <motion.div variants={itemVariants} className="">
+              <motion.div
+                variants={itemVariants}
+                className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
+              >
                 <motion.button
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => scrollToSection("work")}
-                  className=""
+                  className="bg-blue-500 hover:bg-blue-700 text-white px-9 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
                 >
                   View Work
                 </motion.button>
@@ -204,10 +211,186 @@ const HeroSection = () => {
                 </motion.button>
               </motion.div>
 
+              {/* Social Links – Mobile */}
+              <motion.div
+                variants={itemVariants}
+                className="flex justify-center space-x-7 mb-8"
+              >
+                {[
+                  { icon: FiGithub, href: "#" },
+                  { icon: FiLinkedin, href: "#" },
+                  { icon: Mail, href: "#" },
+                ].map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href={social.href}
+                    whileHover={{ y: -3, scale: 1.1 }}
+                    className={`p-3 rounded-full transition-colors ${
+                      isDarkMode
+                        ? "text-gray-400 hover:text-white hover:bg-gray-900"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+                    }`}
+                  >
+                    <social.icon size={20} />
+                  </motion.a>
+                ))}
+              </motion.div>
 
+              {/* Tech Stack – Mobile */}
+              <motion.div
+                variants={itemVariants}
+                className="flex justify-center items-center space-x-5 text-xs uppercase tracking-widest flex-wrap"
+              >
+                <span
+                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
+                >
+                  React
+                </span>
+                <span
+                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
+                >
+                  •
+                </span>
+                <span
+                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
+                >
+                  Node.js
+                </span>
+                <span
+                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
+                >
+                  •
+                </span>
+                <span
+                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
+                >
+                  React
+                </span>
+                <span
+                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
+                >
+                  •
+                </span>
+                <span
+                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
+                >
+                  Node.js
+                </span>
+              </motion.div>
             </motion.div>
           </div>
+
+          {/* Desktop Layout – Split */}
+          <div className="hidden lg:grid lg:grid-cols-2 lg:gap-20 lg:items-center">
+            {/* Left Column – Content */}
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={containerVariants}
+              className="text-left"
+            >
+              <motion.div
+                variants={textVariants}
+                className={`text-xl uppercase tracking-widest font-medium ${
+                  isDarkMode ? "text-gray-500" : "text-gray-600"
+                } mb-6`}
+              >
+                Full Stack Developer
+              </motion.div>
+
+              <motion.h1 variants={itemVariants} className="text-5xl xl:text-6xl font-light mb-8 leading-tight">
+                <span className={isDarkMode ? "text-white" : "text-gray-900"}>
+                  Building digital
+                </span>
+                <br />
+                <span className="text-blue-500 font-medium">experiences</span>
+                <br />
+                <span className={isDarkMode ? "text-white" : "text-gray-900"}>
+                  that matter
+                </span>
+              </motion.h1>
+
+              <motion.p
+                variants={itemVariants}
+                className={`text-xl ${
+                  isDarkMode ? "text-gray-400" : "text-gray-700"
+                } mb-12 font-light leading relaxed max-w-lg`}
+              >
+                I design and develop web applications with a focus on
+                performance, accessibility, and delightful user experiences.
+              </motion.p>
+
+              {/* CTA Buttons desktop */}
+              <motion.div
+                variants={itemVariants}
+                className="flex gap-6 mb-8"
+              >
+                {/* View Work Button */}
+                <motion.button
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => scrollToSection("work")}
+                  className=" bg-blue-500 hover:bg-blue-700 px-8 py-4 rounded-full text-sm uppercase tracking-widest font-medium transition-all duration-300"
+                >
+                  View Work
+                </motion.button>
+
+                {/* Get in Touch Button */}
+                <motion.button
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => scrollToSection("contact")}
+                  className={`border ${
+                    isDarkMode
+                      ? "border-gray-700 hover:border-gray-600 hover:bg-gray-800 text-gray-300"
+                      : "border-gray-300 hover:border-gray-400 hover:bg-gray-200 text-gray-700"
+                  } px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
+                >
+                  Get in Touch
+                </motion.button>
+              </motion.div>
+
+              {/* Social Links – Desktop Only */}
+              <motion.div
+                variants={itemVariants}
+                className="flex space-x-7 mb-12"
+              >
+                {[
+                  { icon: FiGithub, href: "#" },
+                  { icon: FiLinkedin, href: "#" },
+                  { icon: Mail, href: "#" },
+                ].map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href={social.href}
+                    whileHover={{ y: -3, scale: 1.1 }}
+                    className={`p-3 rounded-full transition-colors ${
+                      isDarkMode
+                        ? "text-gray-400 hover:text-white hover:bg-gray-900"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+                    }`}
+                  >
+                    <social.icon size={20} />
+                  </motion.a>
+                ))}
+              </motion.div>
+            </motion.div>
+
+            
+          </div>
         </div>
+
+        {/* Scroll Indicator */}
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 "
+        >
+          <ArrowDown
+            size={20}
+            className={isDarkMode ? "text-gray-600" : "text-gray-400"}
+          />
+        </motion.div>
       </motion.section>
     </div>
   );
