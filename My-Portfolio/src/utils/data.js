@@ -260,4 +260,3 @@ export const CONTACT_INFO = [
     value: "+91 8101708638",
   },
 ];
-

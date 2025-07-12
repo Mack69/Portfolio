@@ -75,13 +75,13 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center space-x-3">
           <motion.button
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => toggleDarkMode(isDarkMode ? "Light" : "dark")}
             className={`p-2 rounded-full transition-colors ${
               isDarkMode
                 ? "text-gray-400 hover:text-white hover:bg-gray-800"
-                : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+                : "text-gray-600 hover:text-gray-900 hover:bg-gray-300"
             }`}
           >
             {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
@@ -107,10 +107,10 @@ const Navbar = () => {
           <motion.div
             initial={{opacity: 0,y:-20}}
             animate={{opacity :1, y:0}}
-            exit={{opacity: 0, y:-2}}
+            exit={{opacity: 0, y:-20}}
             className={`md:hidden mt-4 p-4 rounded-lg ${
               isDarkMode? "bg-gray-900" : "bg-white"
-              } border ${isDarkMode ? "bg-gray-800" : "bg-gray-200"
+              } border border-gray-500 ${isDarkMode ? "bg-gray-800" : "bg-gray-200"
             }`}
           >
             {["Home", "Skills", "Experience", "Projects", "About", "Contact"].map((item) =>(
