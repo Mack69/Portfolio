@@ -2,6 +2,7 @@ import { delay, motion, stagger, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext";
+import { containerVariants, itemVariants } from "../../utils/helper";
 
 import Profile_Pic from "../../assets/images/profile-pic.png";
 
@@ -14,29 +15,6 @@ const HeroSection = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  };
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { y: 30, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
-    },
   };
 
   const textVariants = {
@@ -287,7 +265,7 @@ const HeroSection = () => {
               initial="hidden"
               animate="visible"
               variants={containerVariants}
-              className="text-left"
+              className="text-left ml-8"
             >
               <motion.div
                 variants={textVariants}
@@ -298,7 +276,10 @@ const HeroSection = () => {
                 Full Stack Developer
               </motion.div>
 
-              <motion.h1 variants={itemVariants} className="text-5xl xl:text-6xl font-light mb-8 leading-tight">
+              <motion.h1
+                variants={itemVariants}
+                className="text-5xl xl:text-6xl font-light mb-8 leading-tight"
+              >
                 <span className={isDarkMode ? "text-white" : "text-gray-900"}>
                   Building digital
                 </span>
@@ -321,10 +302,7 @@ const HeroSection = () => {
               </motion.p>
 
               {/* CTA Buttons desktop */}
-              <motion.div
-                variants={itemVariants}
-                className="flex gap-6 mb-8"
-              >
+              <motion.div variants={itemVariants} className="flex gap-6 mb-8">
                 {/* View Work Button */}
                 <motion.button
                   whileHover={{ y: -2 }}
@@ -376,7 +354,103 @@ const HeroSection = () => {
               </motion.div>
             </motion.div>
 
-            
+            {/* Right coloumn - Profile Img */}
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              vartiants={imageVariants}
+              className="flex justify-center lg:justify-end "
+            >
+              <div className="relative">
+                {/* Tech Stack – Desktop */}
+                <motion.div
+                  variants={itemVariants}
+                  className="flex items-center space-x-6 text-xs uppercase tracking-widest absolute -top-25 -left-30"
+                >
+                  <span
+                    className={isDarkMode ? "text-gray-500" : "text-gray-400"}
+                  >
+                    React
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
+                  >
+                    •
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-500" : "text-gray-400"}
+                  >
+                    Node.js
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
+                  >
+                    •
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-500" : "text-gray-400"}
+                  >
+                    TypeScript
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
+                  >
+                    •
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-500" : "text-gray-400"}
+                  >
+                    TypeScript
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
+                  >
+                    •
+                  </span>
+                  <span
+                    className={isDarkMode ? "text-gray-500" : "text-gray-400"}
+                  >
+                    TypeScript
+                  </span>
+                </motion.div>
+
+                {/* Profile Card – Desktop Only */}
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  className={`hidden md:flex w-80 h-96 rounded-3xl overflow-hidden border-4 ${
+                    isDarkMode ? "border-gray-800" : "border-gray-300"
+                  } shadow-2xl`}
+                >
+                  <img
+                    src={Profile_Pic}
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </motion.div>
+
+                {/* Decorative Elements */}
+                {/* Clockwise Rotation */}
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="absolute -inset-4 rounded-4xl border border-blue-500/20 "
+                />
+                {/* Counter-Clockwise Rotation */}
+                <motion.div
+                  animate={{ rotate: -360 }}
+                  transition={{
+                    duration: 30,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="absolute -inset-8 rounded-4xl border border-purple-500/20"
+                />
+              </div>
+            </motion.div>
           </div>
         </div>
 
