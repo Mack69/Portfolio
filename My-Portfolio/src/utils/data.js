@@ -17,8 +17,6 @@ import {
 } from "lucide-react";
 
 import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
-
-import image1 from "../assets/images/User_dp.png";
 import proj1 from "../assets/images/harmonize.jpg";
 
 export const SKILLS_CATEGORY = [
@@ -68,7 +66,7 @@ export const SKILLS_CATEGORY = [
       { name: "CI/CD", level: 75, color: "bg-purple-600" },
     ],
   },
-    {
+  {
     title: "DevOps",
     icon: Cloud,
     description: "Deploying and scaling applications",
@@ -80,7 +78,7 @@ export const SKILLS_CATEGORY = [
       { name: "CI/CD", level: 75, color: "bg-purple-600" },
     ],
   },
-    {
+  {
     title: "DevOps",
     icon: Cloud,
     description: "Deploying and scaling applications",

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion, useScroll, AnimatePresence } from "framer-motion";
 import { Code2, Sun, Moon, Menu, X } from "lucide-react";
-import { useTheme } from "../../context/ThemeContext";
+import { useTheme } from "../context/ThemeContext";
 
 const Navbar = () => {
   // Example usage of useScroll and useTheme
