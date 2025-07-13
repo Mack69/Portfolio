@@ -13,7 +13,7 @@ const ProjectSection = () => {
 
   return (
     <section
-      id="work"
+      id="projects"
       ref={sectionRef}
       className={`py-24 px-6 ${
         isDarkMode ? "bg-gray-950 text-white" : "bg-gray-50 text-gray-900"
@@ -73,7 +73,7 @@ const ProjectSection = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {PROJECTS.map((project, index) => (
             <motion.div>

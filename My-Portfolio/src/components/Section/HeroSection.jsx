@@ -416,6 +416,7 @@ const HeroSection = () => {
 
                 {/* Profile Card – Desktop Only */}
                 <motion.div
+                  variants={imageVariants}
                   whileHover={{ scale: 1.02 }}
                   className={`hidden md:flex w-80 h-96 rounded-3xl overflow-hidden border-4 ${
                     isDarkMode ? "border-gray-800" : "border-gray-300"
