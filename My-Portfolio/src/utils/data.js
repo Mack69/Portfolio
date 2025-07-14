@@ -250,15 +250,15 @@ export const SOCIAL_LINKS = [
     name: "Twitter",
     icon: FiTwitter,
     url: "https://twitter.com",
-    color: "hover:text-sky-700",
+    color: "hover:text-sky-500",
     bgColor: "hover:bg-sky-500/30",
   },
   {
     name: "Email",
     icon: Mail,
     url: "ghoshmayukh.hooghly@gmail.com",
-    color: "hover:text-green-500",
-    bgColor: "hover:bg-yellow-200/50",
+    color: "hover:text-green-600",
+    bgColor: "hover:bg-green-400/40",
   },
 ];
 
