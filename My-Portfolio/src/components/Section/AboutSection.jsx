@@ -288,7 +288,10 @@ const AboutSection = () => {
           variants={containerVariants}
           className="text-center mt-20"
         >
-          <motion.div variants={itemVariants} className="flex flex-col items-center space-y-4">
+          <motion.div
+            variants={itemVariants}
+            className="flex flex-col items-center space-y-4"
+          >
             <p
               className={`text-lg ${
                 isDarkMode ? "text-gray-400" : "text-gray-600"
@@ -304,7 +307,6 @@ const AboutSection = () => {
             >
               Let's Work Together
             </motion.button>
-
           </motion.div>
         </motion.div>
       </div>
