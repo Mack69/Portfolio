@@ -41,7 +41,7 @@ const Navbar = () => {
 
         {/* Desktop navigation list */}
         <div className="hidden md:flex items-center space-x-8">
-          {["Home", "Skills", "Experience", "Projects", "About", "Contact"].map(
+          {["Home", "Skills","Projects", "Experience" , "About", "Contact"].map(
             (item) => (
               <motion.button
                 key={item}

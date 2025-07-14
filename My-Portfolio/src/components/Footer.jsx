@@ -82,8 +82,8 @@ const Footer = () => {
   return (
     <footer
       ref={footerRef}
-      className={`relative py-8 px-4 text-center overflow-hidden ${
-        isDarkMode ? "bg-gray-900/45 text-white" : "bg-gray-100 text-gray-900"
+      className={`relative py-8 px-4 text-center  ${
+        isDarkMode ? "bg-gray-950 text-white" : "bg-gray-100 text-gray-900"
       }`}
     >
       <AnimatedGradientLine />
@@ -94,13 +94,13 @@ const Footer = () => {
         className="absolute inset-0 overflow-hidden pointer-events-none"
       >
         <div
-          className={`absolute top-10 right-1/4 w-48 h-48 rounded-full blur-3xl opacity-0 ${
+          className={`absolute top-30 right-1/3 w-96 h-96 rounded-full blur-3xl opacity-0 ${
             isDarkMode ? "bg-blue-500" : "bg-blue-400"
           }`}
         />
         <div
-          className={`absolute bottom-10 left-1/4 w-64 h-64 rounded-full blur-3xl opacity-0 ${
-            isDarkMode ? "bg-purple-500" : "bg-purple-400"
+          className={`absolute bottom-30 left-1/3 w-80 h-80 rounded-full blur-3xl opacity-0 ${
+            isDarkMode ? "bg-purple-600" : "bg-purple-400"
           }`}
         />
       </motion.div>

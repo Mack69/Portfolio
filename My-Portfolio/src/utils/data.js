@@ -16,7 +16,7 @@ import {
   Phone,
 } from "lucide-react";
 
-import { FiGithub, FiTwitter, FiLinkedin , FiInstagram} from "react-icons/fi";
+import { FiGithub, FiTwitter, FiLinkedin, FiInstagram } from "react-icons/fi";
 import proj1 from "../assets/images/harmonize.jpg";
 
 export const SKILLS_CATEGORY = [
