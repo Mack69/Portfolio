@@ -16,7 +16,7 @@ import {
   Phone,
 } from "lucide-react";
 
-import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
+import { FiGithub, FiTwitter, FiLinkedin , FiInstagram} from "react-icons/fi";
 import proj1 from "../assets/images/harmonize.jpg";
 
 export const SKILLS_CATEGORY = [
@@ -243,22 +243,22 @@ export const SOCIAL_LINKS = [
     name: "LinkedIn",
     icon: FiLinkedin,
     url: "https://linkedin.com",
-    color: "hover:text-blue-600",
-    bgColor: "hover:bg-blue-600/30",
+    color: "hover:text-blue-500",
+    bgColor: "hover:bg-blue-500/60",
   },
   {
     name: "Twitter",
     icon: FiTwitter,
     url: "https://twitter.com",
     color: "hover:text-sky-500",
-    bgColor: "hover:bg-sky-500/30",
+    bgColor: "hover:bg-sky-400/60",
   },
   {
-    name: "Email",
-    icon: Mail,
-    url: "ghoshmayukh.hooghly@gmail.com",
-    color: "hover:text-green-600",
-    bgColor: "hover:bg-green-400/40",
+    name: "Instagram",
+    icon: FiInstagram,
+    url: "https://instagram.com",
+    color: "hover:text-pink-400",
+    bgColor: "hover:bg-pink-400/60",
   },
 ];
 
