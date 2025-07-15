@@ -267,7 +267,6 @@ const ContactSection = () => {
                 ))}
               </div>
             </motion.div>
-            
           </motion.div>
         </div>
 
@@ -295,17 +294,20 @@ const ContactSection = () => {
               Sometimes a conversation is worth a thousand messages. Feel free
               to schedule a call to discuss your project.
             </p>
-            <motion.button
+            <motion.a
+              href="https://calendar.app.google/ER6yTb6nhEDyCeAAA" 
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ y: -2, scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               className={`px-6 py-3 rounded-full border font-medium transition-easeIn duration-300 ${
                 isDarkMode
                   ? "border-gray-600 hover:border-blue-500 hover:text-blue-200  hover:bg-blue-800"
-                  : " border-white text-white bg-blue-500 hover:bg-blue-700"
+                  : "border-white text-white bg-blue-500 hover:bg-blue-700"
               }`}
             >
               Schedule a Call
-            </motion.button>
+            </motion.a>
           </motion.div>
         </motion.div>
       </div>
