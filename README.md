@@ -11,7 +11,7 @@ A modern, responsive personal portfolio built with **React.js** and **Framer Mot
 
 ## Demo
 
-Check out the live site: **[Deployed on Vercel]**
+Check out the live site: **[Deployed on Vercel](https://mack-portfolio-azure.vercel.app/)**
 
 ## Getting Started
 
