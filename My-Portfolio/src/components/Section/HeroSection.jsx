@@ -55,7 +55,7 @@ const HeroSection = () => {
         style={{ y: heroY }}
         className="min-h-screen flex items-center justify-center relative px-6 pt-10"
       >
-        <div className="absolute insert-0 overflow-hidden">
+        <div className=" absolute insert-0 overflow-hidden">
           <motion.div
             animate={{
               scale: [1, 1.1, 1],
@@ -66,7 +66,7 @@ const HeroSection = () => {
               repeat: Infinity,
               ease: "linear",
             }}
-            className={`absolute top-20 right-20 w-64 h-64 rounded-full blur-3xl opacity-10 ${
+            className={`absolute top-40 left-1/2  transform -translate-x-1/2 w-40 h-40 md:w-70 md:h-70 rounded-full blur-2xl opacity-5 overflow-hidden ${
               isDarkMode ? "bg-blue-500" : "bg-blue-400"
             }`}
           />
@@ -80,9 +80,8 @@ const HeroSection = () => {
               repeat: Infinity,
               ease: "linear",
             }}
-            className={`absolute bottom-20 left-20 w-48 h-48 rounded-full blur-3xl opacity-10 ${
-              isDarkMode ? "bg-purple-500" : "bg-purple-400"
-            }`}
+            className={`absolute bottom-40 left-1/2 transform -translate-x-1/2 w-40 h-40 md:w-80 md:h-80 rounded-full blur-3xl opacity-5 overflow-hidden 
+              ${isDarkMode ? "bg-purple-500" : "bg-purple-400"}`}
           />
         </div>
 

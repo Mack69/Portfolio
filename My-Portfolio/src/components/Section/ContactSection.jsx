@@ -112,7 +112,7 @@ const ContactSection = () => {
               className={`p-7 rounded-2xl border ${
                 isDarkMode
                   ? "bg-gray-800/50 border-gray-700 backdrop-blur-sm"
-                  : "bg-gray-50/80 border-gray-200 backdrop-blur-sm"
+                  : "bg-gray-200/60 border-gray-200 backdrop-blur-sm"
               }`}
             >
               <h3 className="text-xl font-medium mb-8">Send Me a message</h3>
@@ -176,7 +176,7 @@ const ContactSection = () => {
               className={`p-6 rounded-xl border mt-8 ${
                 isDarkMode
                   ? "bg-green-500/10 border-green-500/20"
-                  : "bg-green-50 border-green-200"
+                  : "bg-green-100/80 border-green-300"
               }`}
             >
               <div className="flex items-center mb-2 space-x-3">
@@ -283,7 +283,7 @@ const ContactSection = () => {
             className={`max-w-2xl mx-auto p-8 rounded-2xl border ${
               isDarkMode
                 ? "bg-gray-800/30 border-gray-700"
-                : "bg-gray-50/50 border-gray-200"
+                : "bg-gray-200/30 border-gray-200"
             }`}
           >
             <h3 className="text-xl font-medium mb-4">Prefer a quick call?</h3>
@@ -300,8 +300,8 @@ const ContactSection = () => {
               whileTap={{ scale: 0.98 }}
               className={`px-6 py-3 rounded-full border font-medium transition-easeIn duration-300 ${
                 isDarkMode
-                  ? "border-gray-600 hover:border-blue-500 hover:text-blue-400"
-                  : "border-gray-300 hover:border-blue-500 hover:text-blue-600"
+                  ? "border-gray-600 hover:border-blue-500 hover:text-blue-200  hover:bg-blue-800"
+                  : " border-white text-white bg-blue-500 hover:bg-blue-700"
               }`}
             >
               Schedule a Call

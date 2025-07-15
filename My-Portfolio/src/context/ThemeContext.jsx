@@ -4,7 +4,7 @@ const ThemeContext= createContext();
 
 export const ThemeProvider = ({children}) => {
     const [isDarkMode, toggleDarkMode] = useState(
-        localStorage.getItem("theme") || "Light"
+        localStorage.getItem("theme") || "dark"
     );
 
     useEffect(() =>{
@@ -27,4 +27,4 @@ export const ThemeProvider = ({children}) => {
     );
 };
 
-export const useTheme = ()=> useContext(ThemeContext);
+export const useTheme = ()=> useContext(ThemeContext); 

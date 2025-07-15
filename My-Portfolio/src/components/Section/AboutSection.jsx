@@ -61,12 +61,12 @@ const AboutSection = () => {
       {/* Background Element */}
       <motion.div style={{ y }} className="absolute inset-0 overflow-hidden">
         <div
-          className={`absolute top-40 right-1/3 w-80 h-80 rounded-full blur-3xl opacity-6 ${
+          className={`absolute top-10 left-1/2  transform -translate-x-1/2 w-40 h-40 md:w-70 md:h-70 rounded-full blur-3xl opacity-6 overflow-hidden ${
             isDarkMode ? "bg-blue-500" : "bg-blue-400"
           }`}
         />
         <div
-          className={`absolute bottom-40 left-1/3 w-96 h-96 rounded-full blur-3xl opacity-6 ${
+          className={`absolute bottom-10 left-1/2  transform -translate-x-1/2 w-40 h-40 md:w-70 md:h-70 rounded-full blur-3xl opacity-6 overflow-hidden ${
             isDarkMode ? "bg-purple-500" : "bg-purple-400"
           }`}
         />

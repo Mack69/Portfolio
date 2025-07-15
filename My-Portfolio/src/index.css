@@ -10,8 +10,11 @@
     font-family: var(--font-display);
   }
 
-  body {
+  html, body {
     background-color: black;
     overflow-x: hidden;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
   }
 }

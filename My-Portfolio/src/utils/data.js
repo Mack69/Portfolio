@@ -232,16 +232,16 @@ export const JOURNEY_STEPS = [
     title: "Methodist School",
     company: "Higher Secondary (ISC)",
     description:
-      "Began learning web development with HTML, CSS, and JavaScript. Built my first website and fell in love with coding.",
+      "Focused on building strong fundamentals in science and mathematics, and took an active interest in computers and the basics of programming.",
     icon: BookOpenCheck,
     color: "bg-blue-500",
   },
   {
-    year: "2021 - 2024",
+    year: "2021- 2024",
     title: "Kristu Jayanti Deemed University",
     company: "Bachelor of Computer Applications (BCA)",
     description:
-      "Joined as a frontend intern, working with React and learning modern development practices. Contributed to real-world projects.",
+      "Learned core computer science subjects and got hands-on practice with coding, making websites and small software projects as part of the coursework.",
     icon: School,
     color: "bg-green-500",
   },
@@ -250,7 +250,7 @@ export const JOURNEY_STEPS = [
     title: "Ideathon Winner",
     company: "Synchronize TechFest",
     description:
-      "Led a team to victory in a national hackathon, building an innovative solution under tight deadlines and presenting to industry experts.",
+      "Participated in a college tech competitions and, as a team, design a simple but problem solving application, winning first prize for innovation & idea presentation.",
     icon: Award,
     color: "bg-pink-500",
   },
@@ -259,17 +259,17 @@ export const JOURNEY_STEPS = [
     title: "Computer Science Degree",
     company: "Kristu Jayanti University",
     description:
-      "Started my undergraduate studies in Computer Science, deepening my understanding of algorithms, data structures, and software engineering.",
+      "Graduated with a computer science degree, consolidating knowledge in algorithms, databases, and software design through projects and exams.",
     icon: GraduationCap,
     color: "bg-yellow-500",
   },
 
   {
-    year: "2024 - 2026",
+    year: "2024- 2026",
     title: "VIT Bhopal University",
     company: "Masters of Computer Application (MCA)",
     description:
-      "Developed and launched my first SaaS product, handling everything from design to deployment and customer support.",
+      "Started a master’s program to learn advanced topics in technology, with a focus on practical skills for building and managing software and applications.",
     icon: UniversityIcon,
     color: "bg-purple-500",
   },

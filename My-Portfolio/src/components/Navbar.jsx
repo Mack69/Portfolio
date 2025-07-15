@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <motion.nav
       style={{ opacity: 1 }}
-      className={`fixed top-0 w-full z-50 px-6 py-4 
+      className={`fixed top-0 w-full z-50 px-4 md:px-6 py-4 
         ${isDarkMode ? "bg-gray-950/80" : "bg-gray-50/80"} 
         backdrop-blur-md 
         ${isDarkMode ? "bg-gray-800" : "bg-gray-200"}`}
@@ -90,7 +90,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsMenuOpen(!isMenuopen)}
-            className={`p-2 rounded-full transition-colors ${
+            className={`p-2 mr-4 rounded-full transition-colors ${
               isDarkMode
                 ? "text-gray-400 hover:text-white hover:bg-gray-800"
                 : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"

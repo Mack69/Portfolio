@@ -151,7 +151,7 @@ const ExperienceSection = () => {
                   className={`w-full md:w-5/12 p-6 rounded-xl border transition-all duration-300 backdrop-blur-sm ${
                     isDarkMode
                       ? "bg-gray-800/50 border-gray-700 hover:border-gray-600 hover:bg-gray-800/70"
-                      : "bg-white border-gray-200 hover:border-gray-300 hover:bg-white"
+                      : "bg-gray-200/60 border-gray-200 hover:border-gray-200 hover:bg-gray-400/40"
                   }`}
                 >
                   <div className="flex items-center justify-between mb-2">
