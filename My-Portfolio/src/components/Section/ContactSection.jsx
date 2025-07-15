@@ -267,6 +267,7 @@ const ContactSection = () => {
                 ))}
               </div>
             </motion.div>
+            
           </motion.div>
         </div>
 

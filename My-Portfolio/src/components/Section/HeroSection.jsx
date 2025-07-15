@@ -10,6 +10,7 @@ const HeroSection = () => {
   const { isDarkMode } = useTheme();
   const { scrollY } = useScroll();
   const heroY = useTransform(scrollY, [0, 500], [0, -100]);
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -127,7 +128,7 @@ const HeroSection = () => {
                 variants={textVariants}
                 className={`text-sm uppercase tracking-widest ${
                   isDarkMode ? "text-gray-500" : "text-gray-600"
-                } mb-4`}
+                } mb-6`}
               >
                 Software Developer
               </motion.div>
@@ -139,16 +140,11 @@ const HeroSection = () => {
                 <span
                   className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
                 >
-                  Building digital
-                </span>
-                <span className="text-3xl font-bold text-blue-500 leading-tight ml-2">
-                  experiences
+                  Turning Ideas into Responsive
                 </span>
                 <br />
-                <span
-                  className={`${isDarkMode ? "text-white" : "text-gray-900"}`}
-                >
-                  that matter
+                <span className="text-3xl font-bold text-blue-500 leading-tight ml-2">
+                  Web Experiences
                 </span>
               </motion.h1>
 
@@ -158,8 +154,9 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-400" : "text-gray-600"
                 } mb-8 max-w-xl mx-auto font-light leading-relaxed`}
               >
-                I craft beautiful, functional web applications with modern
-                technologies and thoughtful user experiences.
+                I’m a results-driven Full Stack Developer with hands-on
+                experience in building and deploying scalable, responsive and
+                performance-optimized web applications.
               </motion.p>
 
               {/* CTA Buttons – Mobile */}
@@ -170,11 +167,12 @@ const HeroSection = () => {
                 <motion.button
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => scrollToSection("work")}
-                  className="bg-blue-500 hover:bg-blue-700 text-white px-9 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
+                  onClick={() => scrollToSection("projects")}
+                  className="bg-blue-600 hover:bg-blue-800 text-white px-9 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
                 >
                   View Work
                 </motion.button>
+
                 <motion.button
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
@@ -195,9 +193,12 @@ const HeroSection = () => {
                 className="flex justify-center space-x-7 mb-8"
               >
                 {[
-                  { icon: FiGithub, href: "#" },
-                  { icon: FiLinkedin, href: "#" },
-                  { icon: Mail, href: "#" },
+                  { icon: FiGithub, href: "https://github.com/Mack69" },
+                  {
+                    icon: FiLinkedin,
+                    href: "https://www.linkedin.com/in/mayukh-ghosh-2b5705224/",
+                  },
+                  { icon: Mail, href: "mailto:ghoshmayukh.janai@gmail.com" },
                 ].map((social, index) => (
                   <motion.a
                     key={index}
@@ -215,46 +216,6 @@ const HeroSection = () => {
               </motion.div>
 
               {/* Tech Stack – Mobile */}
-              <motion.div
-                variants={itemVariants}
-                className="flex justify-center items-center space-x-5 text-xs uppercase tracking-widest flex-wrap"
-              >
-                <span
-                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
-                >
-                  React
-                </span>
-                <span
-                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
-                >
-                  •
-                </span>
-                <span
-                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
-                >
-                  Node.js
-                </span>
-                <span
-                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
-                >
-                  •
-                </span>
-                <span
-                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
-                >
-                  React
-                </span>
-                <span
-                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
-                >
-                  •
-                </span>
-                <span
-                  className={isDarkMode ? "text-gray-500" : "text-gray-500"}
-                >
-                  Node.js
-                </span>
-              </motion.div>
             </motion.div>
           </div>
 
@@ -270,24 +231,26 @@ const HeroSection = () => {
               <motion.div
                 variants={textVariants}
                 className={`text-xl uppercase tracking-widest font-medium ${
-                  isDarkMode ? "text-gray-500" : "text-gray-600"
-                } mb-6`}
+                  isDarkMode ? "text-gray-400" : "text-gray-600"
+                } mb-4`}
               >
-                Full Stack Developer
+                Software Developer
               </motion.div>
 
               <motion.h1
                 variants={itemVariants}
-                className="text-5xl xl:text-6xl font-light mb-8 leading-tight"
+                className="text-5xl max-lg:6xl  font-light mb-8 leading-tight"
               >
                 <span className={isDarkMode ? "text-white" : "text-gray-900"}>
-                  Building digital
+                  Turning Ideas into
                 </span>
                 <br />
-                <span className="text-blue-500 font-medium">experiences</span>
+                <span className="text-blue-500 font-medium">
+                  Responsive Web
+                </span>
                 <br />
                 <span className={isDarkMode ? "text-white" : "text-gray-900"}>
-                  that matter
+                  Experiences
                 </span>
               </motion.h1>
 
@@ -297,8 +260,9 @@ const HeroSection = () => {
                   isDarkMode ? "text-gray-400" : "text-gray-700"
                 } mb-12 font-light leading relaxed max-w-lg`}
               >
-                I design and develop web applications with a focus on
-                performance, accessibility, and delightful user experiences.
+                I’m a results-driven Full Stack Developer with hands-on
+                experience in building and deploying scalable, responsive and
+                performance-optimized web applications.
               </motion.p>
 
               {/* CTA Buttons desktop */}
@@ -307,7 +271,7 @@ const HeroSection = () => {
                 <motion.button
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => scrollToSection("work")}
+                  onClick={() => scrollToSection("projects")}
                   className=" bg-blue-500 hover:bg-blue-700 px-8 py-4 rounded-full text-sm uppercase tracking-widest font-medium transition-all duration-300"
                 >
                   View Work
@@ -331,12 +295,15 @@ const HeroSection = () => {
               {/* Social Links – Desktop Only */}
               <motion.div
                 variants={itemVariants}
-                className="flex space-x-7 mb-12"
+                className="flex space-x-7 mb-8"
               >
                 {[
-                  { icon: FiGithub, href: "#" },
-                  { icon: FiLinkedin, href: "#" },
-                  { icon: Mail, href: "#" },
+                  { icon: FiGithub, href: "https://github.com/Mack69" },
+                  {
+                    icon: FiLinkedin,
+                    href: "https://www.linkedin.com/in/mayukh-ghosh-2b5705224/",
+                  },
+                  { icon: Mail, href: "mailto:ghoshmayukh.janai@gmail.com" },
                 ].map((social, index) => (
                   <motion.a
                     key={index}
@@ -359,60 +326,14 @@ const HeroSection = () => {
               initial="hidden"
               animate="visible"
               vartiants={imageVariants}
-              className="flex justify-center lg:justify-end "
+              className="flex justify-center lg:justify-end mr-6"
             >
               <div className="relative">
                 {/* Tech Stack – Desktop */}
                 <motion.div
                   variants={itemVariants}
                   className="flex items-center space-x-6 text-xs uppercase tracking-widest absolute -top-25 -left-30"
-                >
-                  <span
-                    className={isDarkMode ? "text-gray-500" : "text-gray-400"}
-                  >
-                    React
-                  </span>
-                  <span
-                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
-                  >
-                    •
-                  </span>
-                  <span
-                    className={isDarkMode ? "text-gray-500" : "text-gray-400"}
-                  >
-                    Node.js
-                  </span>
-                  <span
-                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
-                  >
-                    •
-                  </span>
-                  <span
-                    className={isDarkMode ? "text-gray-500" : "text-gray-400"}
-                  >
-                    TypeScript
-                  </span>
-                  <span
-                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
-                  >
-                    •
-                  </span>
-                  <span
-                    className={isDarkMode ? "text-gray-500" : "text-gray-400"}
-                  >
-                    TypeScript
-                  </span>
-                  <span
-                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
-                  >
-                    •
-                  </span>
-                  <span
-                    className={isDarkMode ? "text-gray-500" : "text-gray-400"}
-                  >
-                    TypeScript
-                  </span>
-                </motion.div>
+                ></motion.div>
 
                 {/* Profile Card – Desktop Only */}
                 <motion.div
@@ -459,7 +380,7 @@ const HeroSection = () => {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 "
+          className="absolute bottom-2 left-1/2 transform -translate-x-1/2 "
         >
           <ArrowDown
             size={20}

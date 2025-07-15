@@ -3,21 +3,29 @@ import {
   GraduationCap,
   Briefcase,
   Award,
-  Rocket,
   Heart,
   Coffee,
   BookOpen,
-  Zap,
   Database,
   Server,
   Cloud,
   Mail,
   MapPin,
   Phone,
+  Book,
+  School,
+  BookOpenCheck,
+  UniversityIcon,
 } from "lucide-react";
-
+import { FaCubes } from "react-icons/fa";
 import { FiGithub, FiTwitter, FiLinkedin, FiInstagram } from "react-icons/fi";
+
 import proj1 from "../assets/images/harmonize.jpg";
+import proj2 from "../assets/images/SocioSphere.png";
+import proj3 from "../assets/images/to-do list.png";
+import proj4 from "../assets/images/weather app.png";
+import proj5 from "../assets/images/currency app.png";
+import proj6 from "../assets/images/amazon-clone.png";
 
 export const SKILLS_CATEGORY = [
   {
@@ -33,15 +41,28 @@ export const SKILLS_CATEGORY = [
     ],
   },
   {
-    title: "Frameworks & Libraries",
+    title: "Frontend ",
+    icon: FaCubes,
+    description: "Crafting responsive user interfaces with modern frameworks.",
+    skills: [
+      { name: "React.js", level: 85, color: "bg-yellow-500" },
+      { name: "Next.js", level: 85, color: "bg-yellow-500" },
+      { name: "Tailwind CSS", level: 80, color: "bg-pink-600" },
+      { name: "Framer Motion", level: 92, color: "bg-orange-500" },
+      { name: "Aceternity", level: 92, color: "bg-orange-500" },
+    ],
+  },
+  {
+    title: "Backend",
     icon: Server,
-    description: "Building robust server-side solutions",
+    description:
+      "Engineering scalable, efficient server-side architectures and APIs.",
     skills: [
       { name: "Node.js", level: 90, color: "bg-green-500" },
       { name: "Express.js", level: 88, color: "bg-gray-400" },
-      { name: "React.js", level: 85, color: "bg-yellow-500" },
-      { name: "Tailwind CSS", level: 80, color: "bg-pink-600" },
-      { name: "Framer Motion", level: 92, color: "bg-orange-500" },
+      { name: "REST API", level: 90, color: "bg-green-600" },
+      { name: "Microservices", level: 95, color: "bg-orange-700" },
+      { name: "Postman", level: 75, color: "bg-purple-600" },
     ],
   },
   {
@@ -50,61 +71,47 @@ export const SKILLS_CATEGORY = [
     description: "Managing and optimizing data storage",
     skills: [
       { name: "MongoDB", level: 88, color: "bg-green-600" },
-      { name: "MongoDB", level: 85, color: "bg-blue-700" },
+      { name: "MySQL", level: 85, color: "bg-blue-700" },
       { name: "Firebase", level: 78, color: "bg-yellow-600" },
+      { name: "PostgreSQL", level: 78, color: "bg-yellow-600" },
     ],
   },
+  // {
+  //   title: "Cloud Services",
+  //   icon: Cloud,
+  //   description: "Deploying and scaling applications",
+  //   skills: [
+  //     { name: "AWS EC2", level: 78, color: "bg-orange-600" },
+  //     { name: "AWS S3", level: 90, color: "bg-green-400" },
+  //     { name: "AWS Cognito", level: 95, color: "bg-orange-700" },
+  //     { name: "AWS RDS", level: 75, color: "bg-purple-600" },
+  //     { name: "AWS Lambda", level: 75, color: "bg-purple-600" },
+  //     { name: "AWS VPC", level: 75, color: "bg-purple-600" },
+  //   ],
+  // },
   {
-    title: "DevOps",
+    title: "Deployment",
     icon: Cloud,
-    description: "Deploying and scaling applications",
+    description: "Deploying and scaling applications through cloud services",
     skills: [
-      { name: "Docker", level: 82, color: "bg-blue-600" },
-      { name: "AWS", level: 78, color: "bg-orange-600" },
-      { name: "Vercel", level: 90, color: "bg-green-600" },
-      { name: "Git", level: 95, color: "bg-orange-700" },
-      { name: "CI/CD", level: 75, color: "bg-purple-600" },
-    ],
-  },
-  {
-    title: "DevOps",
-    icon: Cloud,
-    description: "Deploying and scaling applications",
-    skills: [
-      { name: "Docker", level: 82, color: "bg-blue-600" },
-      { name: "AWS", level: 78, color: "bg-orange-600" },
+      { name: "GitHub", level: 82, color: "bg-blue-600" },
+      { name: "AWS Services", level: 78, color: "bg-orange-600" },
       { name: "Vercel", level: 90, color: "bg-green-700" },
-      { name: "Git", level: 95, color: "bg-orange-700" },
-      { name: "CI/CD", level: 75, color: "bg-purple-600" },
+      { name: "CI/CD", level: 95, color: "bg-orange-700" },
     ],
   },
   {
-    title: "DevOps",
-    icon: Cloud,
-    description: "Deploying and scaling applications",
+    title: "Soft Skills",
+    icon: Book,
+    description:
+      "Collaborating and communicating for team and project success.",
     skills: [
-      { name: "Docker", level: 82, color: "bg-blue-600" },
-      { name: "AWS", level: 78, color: "bg-orange-600" },
-      { name: "Vercel", level: 90, color: "bg-green-400" },
-      { name: "Git", level: 95, color: "bg-orange-700" },
-      { name: "CI/CD", level: 75, color: "bg-purple-600" },
+      { name: "Agile Development", level: 82, color: "bg-blue-600" },
+      { name: "Problem Solving", level: 78, color: "bg-orange-600" },
+      { name: "Team Collaboration", level: 90, color: "bg-green-700" },
+      { name: "Project Management", level: 95, color: "bg-orange-700" },
     ],
   },
-];
-
-export const TECH_STACK = [
-  "JavaScript",
-  "HTML5",
-  "CSS3",
-  "Sass",
-  "Webpack",
-  "Vite",
-  "Jest",
-  "Cypress",
-  "Figma",
-  "Adobe XD",
-  "Notion",
-  "Slack",
 ];
 
 export const STATS = [
@@ -123,80 +130,125 @@ export const PROJECTS = [
     image: proj1,
     tags: ["Kotlin", "Firebase", "Figma"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Mack69/Harmonize--A-Music-Streaming-App",
     featured: false,
     category: "Android Dev",
   },
   {
-    id: 2,
-    title: "E-Commerce Platform",
+    id: 3,
+    title: "SocioSphere",
     description:
-      "A full-stack e-commerce solution with advanced filtering, payment integration, and real-time inventory management.",
-    image: proj1,
-    tags: ["React", "Tailwind", "Framer motion"],
+      "A Smart Society Management System for enhancing the management of residential societies or communities.",
+    image: proj2,
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Mack69/SocioSphere",
     featured: false,
     category: "Full Stack",
   },
   {
     id: 3,
-    title: "E-Commerce Platform",
+    title: "To-Do List",
     description:
-      "A full-stack e-commerce solution with advanced filtering, payment integration, and real-time inventory management.",
-    image: proj1,
-    tags: ["React", "Tailwind", "Framer motion"],
+      "Organize daily tasks efficiently with a simple, responsive and intuitive to-do list application.",
+    image: proj3,
+    tags: ["HTML5", "CSS3", "JavaScript"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Mack69/Project-To-Do-List",
     featured: false,
     category: "Full Stack",
   },
   {
     id: 4,
-    title: "E-Commerce Platform",
+    title: "Weather Application",
     description:
-      "A full-stack e-commerce solution with advanced filtering, payment integration, and real-time inventory management.",
-    image: proj1,
-    tags: ["React", "Tailwind", "Framer motion"],
+      "Check current weather conditions and forecasts for any location with a clean, interactive application.",
+    image: proj4,
+    tags: ["HTML5", "CSS3", "JavaScript", "REST API"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Mack69/Project-Weather-App",
+    featured: false,
+    category: "Full Stack",
+  },
+  {
+    id: 5,
+    title: "Currency Converter",
+    description:
+      "Instantly convert between currencies with real-time exchange rates in a user-friendly interface.",
+    image: proj5,
+    tags: ["HTML5", "CSS3", "JavaScript", "REST API"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Mack69/Project-Currency-Converter",
+    featured: false,
+    category: "Full Stack",
+  },
+  {
+    id: 6,
+    title: "Amazone Clone",
+    description:
+      "A full-stack e-commerce web application, built with frontend technologies to replicate core functionalities.",
+    image: proj6,
+    tags: ["HTML5", "CSS3", "JavaScript"],
+    liveUrl: "https://mack69.github.io/Amazon-Clone/",
+    githubUrl: "https://github.com/Mack69/Amazon-Clone",
     featured: false,
     category: "Full Stack",
   },
 ];
 
-export const JOURNEY_STEPS = [
+export const EXPERIENCE_STEPS = [
   {
-    year: "2021",
-    title: "Started Coding Journey",
-    company: "Self-taught",
+    year: "Apr 25 - May 25 ",
+    title: "Software Developer Intern",
+    company: "BlueStocks.in",
     description:
-      "Began learning web development with HTML, CSS, and JavaScript. Built my first website and fell in love with coding.",
-    icon: Code2,
+      "Developed and maintained a stock market-focused web platform that streamlined IPO listings for newly registered companies, enhancing accessibility for investors. ",
+    icon: Briefcase,
     color: "bg-blue-500",
   },
   {
-    year: "2022",
-    title: "First Internship",
-    company: "TechStart Inc.",
+    year: "Jun 24 - Aug 24",
+    title: "Software Developer Intern",
+    company: "Afame Technologies",
     description:
-      "Joined as a frontend intern, working with React and learning modern development practices. Contributed to real-world projects.",
+      "Developed and maintained scalable web applications using modern tech stacks i.e. React.js, Node.js, and contributing to the company’s core product suite. ",
     icon: Briefcase,
     color: "bg-green-500",
   },
   {
-    year: "2022",
-    title: "Computer Science Degree",
-    company: "University of Technology",
+    year: "Jun 23 - Jul 23",
+    title: "Web Developer Intern",
+    company: "TechnoHacks EduTech Pvt Ltd.",
     description:
-      "Started my undergraduate studies in Computer Science, deepening my understanding of algorithms, data structures, and software engineering.",
-    icon: GraduationCap,
+      "Developed responsive static websites like e-commerce stores, weather apps, etc. using HTML5, CSS3, and JavaScript, ensuring cross-browser compatibility.",
+    icon: Briefcase,
     color: "bg-yellow-500",
   },
+];
+
+export const JOURNEY_STEPS = [
   {
-    year: "2023",
-    title: "Hackathon Winner",
-    company: "TechFest",
+    year: "2019 - 2021",
+    title: "Methodist School",
+    company: "Higher Secondary (ISC)",
+    description:
+      "Began learning web development with HTML, CSS, and JavaScript. Built my first website and fell in love with coding.",
+    icon: BookOpenCheck,
+    color: "bg-blue-500",
+  },
+  {
+    year: "2021 - 2024",
+    title: "Kristu Jayanti Deemed University",
+    company: "Bachelor of Computer Applications (BCA)",
+    description:
+      "Joined as a frontend intern, working with React and learning modern development practices. Contributed to real-world projects.",
+    icon: School,
+    color: "bg-green-500",
+  },
+  {
+    year: "2022",
+    title: "Ideathon Winner",
+    company: "Synchronize TechFest",
     description:
       "Led a team to victory in a national hackathon, building an innovative solution under tight deadlines and presenting to industry experts.",
     icon: Award,
@@ -204,11 +256,21 @@ export const JOURNEY_STEPS = [
   },
   {
     year: "2024",
-    title: "Launched First Product",
-    company: "StartupX",
+    title: "Computer Science Degree",
+    company: "Kristu Jayanti University",
+    description:
+      "Started my undergraduate studies in Computer Science, deepening my understanding of algorithms, data structures, and software engineering.",
+    icon: GraduationCap,
+    color: "bg-yellow-500",
+  },
+
+  {
+    year: "2024 - 2026",
+    title: "VIT Bhopal University",
+    company: "Masters of Computer Application (MCA)",
     description:
       "Developed and launched my first SaaS product, handling everything from design to deployment and customer support.",
-    icon: Rocket,
+    icon: UniversityIcon,
     color: "bg-purple-500",
   },
 ];
@@ -235,30 +297,30 @@ export const SOCIAL_LINKS = [
   {
     name: "GitHub",
     icon: FiGithub,
-    url: "https://github.com",
+    url: "https://github.com/Mack69",
     color: "hover:text-gray-200",
-    bgColor: "hover:bg-gray-800",
+    bgColor: "hover:bg-violet-500/60",
   },
   {
     name: "LinkedIn",
     icon: FiLinkedin,
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/mayukh-ghosh-2b5705224/",
     color: "hover:text-blue-500",
-    bgColor: "hover:bg-blue-500/60",
+    bgColor: "hover:bg-blue-500/50",
   },
   {
     name: "Twitter",
     icon: FiTwitter,
-    url: "https://twitter.com",
+    url: " https://twitter.com/MayukhG11467943 ",
     color: "hover:text-sky-500",
     bgColor: "hover:bg-sky-400/60",
   },
   {
     name: "Instagram",
     icon: FiInstagram,
-    url: "https://instagram.com",
-    color: "hover:text-pink-400",
-    bgColor: "hover:bg-pink-400/60",
+    url: "https://instagram.com/mayukh_ghosh108",
+    color: "hover:text-pink-300",
+    bgColor: "hover:bg-pink-500/85",
   },
 ];
 

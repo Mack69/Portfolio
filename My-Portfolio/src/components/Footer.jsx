@@ -18,25 +18,25 @@ const Footer = () => {
     {
       name: "GitHub",
       icon: FiGithub,
-      url: "https://github.com/",
+      url: "https://github.com/Mack69",
       color: "hover:text-violet-500",
     },
     {
       name: "LinkedIn",
       icon: FiLinkedin,
-      url: "https://linkedin.com/",
+      url: "https://www.linkedin.com/in/mayukh-ghosh-2b5705224/",
       color: "hover:text-blue-600",
     },
     {
       name: "Twitter",
       icon: FiTwitter,
-      url: "https://twitter.com/",
+      url: "https://twitter.com/MayukhG11467943",
       color: "hover:text-blue-400",
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:your@email.com",
+      url: "mailto:ghoshmayukh.janai@email.com",
       color: "hover:text-green-600",
     },
   ];
@@ -132,9 +132,9 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               variants={itemVariants}
-              className={`p-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ${social.color}`}
+              className={`p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors ${social.color}`}
             >
-              <social.icon size={20} />
+              <social.icon size={22} />
             </motion.a>
           ))}
         </motion.div>

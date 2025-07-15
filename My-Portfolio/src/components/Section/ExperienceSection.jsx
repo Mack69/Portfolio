@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
-import { JOURNEY_STEPS } from "../../utils/data";
+import { EXPERIENCE_STEPS } from "../../utils/data";
 import { containerVariants, itemVariants } from "../../utils/helper";
 
 const ExperienceSection = () => {
@@ -90,14 +90,15 @@ const ExperienceSection = () => {
               isDarkMode ? "text-gray-500" : "text-gray-600"
             } mb-4`}
           >
-            Featured Work
+            Featured Experience
           </motion.div>
 
           <motion.h2
             variants={itemVariants}
             className="text-3xl md:text-4xl font-light mb-6"
           >
-            Recent <span className="text-blue-500 font-medium">Projects</span>
+            Professional{" "}
+            <span className="text-blue-500 font-medium">Experiences</span>
           </motion.h2>
 
           {/* Description */}
@@ -107,8 +108,8 @@ const ExperienceSection = () => {
               isDarkMode ? "text-gray-400" : "text-gray-600"
             } max-w-2xl mx-auto font-light`}
           >
-            A collection of Projects that showcase my expertise in building
-            modern web applications and solving complex problems.
+            Explore how my experience in diverse environments has shaped my
+            expertise in delivering results and solving complex challenges.
           </motion.p>
         </motion.div>
 
@@ -127,7 +128,7 @@ const ExperienceSection = () => {
 
           {/* Timeline Steps: Alternating Sides */}
           <div className="space-y-16">
-            {JOURNEY_STEPS.map((step, index) => (
+            {EXPERIENCE_STEPS.map((step, index) => (
               <motion.div
                 key={step.year}
                 variants={stepVariants(index)}
@@ -140,9 +141,9 @@ const ExperienceSection = () => {
               >
                 {/* Dot: Centered on Line */}
                 <div
-                  className={`absolute left-1/2 top-4 w-12 h-12 rounded-full ${step.color} flex items-center justify-center -translate-x-1/2 z-10`}
+                  className={`absolute left-1/2 top-4 w-14 h-14 rounded-full ${step.color} flex items-center justify-center -translate-x-1/2 z-10`}
                 >
-                  <step.icon size={24} className="text-white" />
+                  <step.icon size={25} className="text-white" />
                 </div>
 
                 {/* Step Content: Alternates Left/Right */}

@@ -86,14 +86,14 @@ const AboutSection = () => {
               isDarkMode ? "text-gray-500" : "text-gray-600"
             } mb-4`}
           >
-            Get To Know Me
+            About Me
           </motion.div>
 
           <motion.h2
             variants={itemVariants}
             className="text-3xl md:text-5xl font-light mb-6"
           >
-            All About<span className="text-blue-500 font-medium"> Me !</span>
+            Get To <span className="text-blue-500 font-medium"> Know Me !</span>
           </motion.h2>
         </motion.div>
 
@@ -109,40 +109,45 @@ const AboutSection = () => {
               className={`p-8 rounded-2xl border ${
                 isDarkMode
                   ? "bg-gray-800/50 border-gray-700 backdrop-blur-sm"
-                  : "bg-gray-50/80  border-gray-200 backdrop-blur-sm"
+                  : "bg-gray-200/70  border-gray-200 backdrop-blur-sm"
               }`}
             >
               <h3
                 className={`text-2xl font-medium mb-6 ${
-                  isDarkMode ? "text-gray-300" : "text-gray-700"
+                  isDarkMode ? "text-blue-400" : "text-blue-700"
                 }`}
               >
-                My Journey
+                Meet the Developer
               </h3>
               <p
-                className={`text-lg leading-relaxed mb-6 ${
+                className={`text- leading-relaxed mb-6 py-2 ${
                   isDarkMode ? "text-gray-300" : "text-gray-700"
                 }`}
               >
-                I am a passionate developer focused on building impactful
-                digital experiences. My journey blends creativity, technical
-                expertise, and a commitment to continuous learning.
+                I’m a results-driven Full Stack Developer with hands-on
+                experience in building & deploying scalable, and
+                performance-optimized web applications. With a strong foundation
+                in both frontend and backend development, I enjoy collaborating
+                with teams to bring projects from concept to launch.
               </p>
               <p
-                className={`text-base leading-relaxed mb-6 ${
+                className={`text- leading-relaxed mb-6  py-2 ${
                   isDarkMode ? "text-gray-300" : "text-gray-700"
                 }`}
               >
-                From learning the basics of programming to building full-stack
-                applications, my path has been driven by curiosity and a love
-                for problem-solving. I thrive on transforming ideas into reality
-                through code.
+                My goal? To contribute to impactful projects where I can grow as
+                a developer, solve meaningful problems, and build digital
+                experiences that make people’s lives easier. Let’s connect if
+                you're looking for someone who’s tech-savvy, team-oriented, and
+                always ready to tackle the next challenge!
               </p>
             </motion.div>
 
             {/* Timeline of My Journey*/}
             <motion.div variants={itemVariants} className="space-y-4">
-              <h3 className="text-xl font-medium mb-6 ml-2">ww</h3>
+              <h3 className="text-xl font-medium mb-6 ml-2 text-gray-500">
+                What are my Objectives
+              </h3>
               <div className="grid gap-4">
                 {PASSIONS.map((passion, index) => (
                   <motion.div
@@ -152,7 +157,7 @@ const AboutSection = () => {
                     className={`flex items-center space-x-4 p-4 rounded-xl ${
                       isDarkMode
                         ? "bg-gray-800/30  hover:bg-gray-800/50"
-                        : "bg-gray-50/50  hover:bg-gray-100/50"
+                        : "bg-gray-200/70  hover:bg-gray-400/40"
                     } transition-all duration-100`}
                   >
                     <div
@@ -211,7 +216,7 @@ const AboutSection = () => {
             className="relative"
           >
             <h3 className="text-2xl font-medium mb-8 text-center lg:text-left">
-              My Developer Journey
+              My Learning Journey
             </h3>
 
             {/* Timeline Line */}
@@ -243,7 +248,7 @@ const AboutSection = () => {
                     className={`flex-grow p-6 rounded-xl border transition-all duration-300 ${
                       isDarkMode
                         ? "bg-gray-800/50 border-gray-700 group-hover:border-gray-600 group-hover:bg-gray-800/70"
-                        : "bg-white border-gray-200 group-hover:border-gray-300 group-hover:bg-white"
+                        : "bg-gray-200/70 border-gray-200 group-hover:border-gray-300 group-hover:bg-gray-400/40"
                     } backdrop-blur-sm `}
                   >
                     <div className="flex items-center justify-between mb-2">
@@ -252,7 +257,7 @@ const AboutSection = () => {
                         className={`text-sm  px-3 py-1 rounded-full ${
                           isDarkMode
                             ? "bg-gray-700 text-gray-300"
-                            : "bg-gray-100 text-gray-700"
+                            : "bg-gray-400/30 text-gray-800"
                         }`}
                       >
                         {step.year}
