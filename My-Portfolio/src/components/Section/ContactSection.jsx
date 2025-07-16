@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
-import { FiMail, FiGithub, FiLinkedin } from "react-icons/fi";
 import { itemVariants, containerVariants } from "../../utils/helper";
 import { useTheme } from "../../context/ThemeContext";
 import { CONTACT_INFO, SOCIAL_LINKS } from "../../utils/data";

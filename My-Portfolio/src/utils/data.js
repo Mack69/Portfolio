@@ -33,11 +33,11 @@ export const SKILLS_CATEGORY = [
     icon: Code2,
     description: "Crafting beautiful, responsive user interfaces",
     skills: [
-      { name: "Java", level: 95, color: "bg-blue-500" },
-      { name: "JavaScript", level: 90, color: "bg-blue-600" },
-      { name: "Python", level: 80, color: "bg-pink-800/80" },
-      { name: "C", level: 70, color: "bg-cyan-500" },
-      { name: "SQL", level: 80, color: "bg-pink-500" },
+      { name: "Java", level: 95, color: "bg-emerald-500" },
+      { name: "JavaScript", level: 85, color: "bg-yellow-500" },
+      { name: "Python", level: 80, color: "bg-rose-600" },
+      { name: "C", level: 70, color: "bg-sky-600" },
+      { name: "SQL", level: 80, color: "bg-purple-600" },
     ],
   },
   {
@@ -45,11 +45,11 @@ export const SKILLS_CATEGORY = [
     icon: FaCubes,
     description: "Crafting responsive user interfaces with modern frameworks.",
     skills: [
-      { name: "React.js", level: 85, color: "bg-yellow-500" },
-      { name: "Next.js", level: 85, color: "bg-yellow-500" },
-      { name: "Tailwind CSS", level: 80, color: "bg-pink-600" },
-      { name: "Framer Motion", level: 92, color: "bg-orange-500" },
-      { name: "Aceternity", level: 92, color: "bg-orange-500" },
+      { name: "React.js", level: 85, color: "bg-red-700" },
+      { name: "Next.js", level: 85, color: "bg-orange-300" },
+      { name: "Tailwind CSS", level: 80, color: "bg-blue-800" },
+      { name: "Framer Motion", level: 92, color: "bg-lime-600" },
+      { name: "Aceternity", level: 92, color: "bg-orange-600" },
     ],
   },
   {
@@ -58,11 +58,11 @@ export const SKILLS_CATEGORY = [
     description:
       "Engineering scalable, efficient server-side architectures and APIs.",
     skills: [
-      { name: "Node.js", level: 90, color: "bg-green-500" },
-      { name: "Express.js", level: 88, color: "bg-gray-400" },
+      { name: "Node.js", level: 90, color: "bg-cyan-500" },
+      { name: "Express.js", level: 88, color: "bg-fuchsia-500" },
       { name: "REST API", level: 90, color: "bg-green-600" },
-      { name: "Microservices", level: 95, color: "bg-orange-700" },
-      { name: "Postman", level: 75, color: "bg-purple-600" },
+      { name: "Microservices", level: 95, color: "bg-pink-600" },
+      { name: "Postman", level: 75, color: "bg-blue-600" },
     ],
   },
   {
@@ -70,10 +70,10 @@ export const SKILLS_CATEGORY = [
     icon: Database,
     description: "Managing and optimizing data storage",
     skills: [
-      { name: "MongoDB", level: 88, color: "bg-green-600" },
-      { name: "MySQL", level: 85, color: "bg-blue-700" },
-      { name: "Firebase", level: 78, color: "bg-yellow-600" },
-      { name: "PostgreSQL", level: 78, color: "bg-yellow-600" },
+      { name: "MongoDB", level: 85, color: "bg-violet-800" },
+      { name: "MySQL", level: 85, color: "bg-purple-700" },
+      { name: "Firebase", level: 80, color: "bg-violet-500" },
+      { name: "PostgreSQL", level: 75, color: "bg-violet-400" },
     ],
   },
   // {
@@ -94,10 +94,10 @@ export const SKILLS_CATEGORY = [
     icon: Cloud,
     description: "Deploying and scaling applications through cloud services",
     skills: [
-      { name: "GitHub", level: 82, color: "bg-blue-600" },
-      { name: "AWS Services", level: 78, color: "bg-orange-600" },
-      { name: "Vercel", level: 90, color: "bg-green-700" },
-      { name: "CI/CD", level: 95, color: "bg-orange-700" },
+      { name: "GitHub", level: 85, color: "bg-red-700" },
+      { name: "Vercel", level: 80, color: "bg-red-500" },
+      { name: "AWS Services", level: 75, color: "bg-rose-400" },
+      { name: "CI/CD", level: 70, color: "bg-pink-400" },
     ],
   },
   {
@@ -106,10 +106,10 @@ export const SKILLS_CATEGORY = [
     description:
       "Collaborating and communicating for team and project success.",
     skills: [
-      { name: "Agile Development", level: 82, color: "bg-blue-600" },
-      { name: "Problem Solving", level: 78, color: "bg-orange-600" },
-      { name: "Team Collaboration", level: 90, color: "bg-green-700" },
-      { name: "Project Management", level: 95, color: "bg-orange-700" },
+      { name: "Agile Development", level: 85, color: "bg-green-600" },
+      { name: "Problem Solving", level: 80, color: "bg-emerald-400" },
+      { name: "Team Collaboration", level: 85, color: "bg-sky-500" },
+      { name: "Project Management", level: 95, color: "bg-yellow-500" },
     ],
   },
 ];
@@ -217,7 +217,7 @@ export const EXPERIENCE_STEPS = [
   },
   {
     year: "Jun 23 - Jul 23",
-    title: "Web Developer Intern",
+    title: "Frontend Web Developer Intern",
     company: "TechnoHacks EduTech Pvt Ltd.",
     description:
       "Developed responsive static websites like e-commerce stores, weather apps, etc. using HTML5, CSS3, and JavaScript, ensuring cross-browser compatibility.",

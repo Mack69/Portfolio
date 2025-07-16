@@ -133,15 +133,17 @@ const ExperienceSection = () => {
                 key={step.year}
                 variants={stepVariants(index)}
                 whileHover={{ x: index % 2 === 0 ? 8 : -8 }}
-                className={`relative flex items-start w-full max-w-5xl mx-auto ${
+                className={`relative flex flex-col items-center w-full max-w-5xl mx-auto 
+                ${
                   index % 2 === 0
-                    ? "justify-start flex-row-reverse"
-                    : "justify-start flex-row"
+                    ? "md:justify-start md:flex-row-reverse"
+                    : "md:justify-start md:flex-row"
                 }`}
               >
                 {/* Dot: Centered on Line */}
                 <div
-                  className={`absolute left-1/2 top-4 w-14 h-14 rounded-full ${step.color} flex items-center justify-center -translate-x-1/2 z-10`}
+                  className={`relative mb-4 w-14 h-14 rounded-full ${step.color} flex items-center justify-center z-10 
+                              md:absolute md:left-1/2 md:top-4 md:-translate-x-1/2`}
                 >
                   <step.icon size={25} className="text-white" />
                 </div>
@@ -155,7 +157,7 @@ const ExperienceSection = () => {
                   }`}
                 >
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="text-xl font-medium">{step.title}</h4>
+                    <h4 className="text-lg font-medium">{step.title}</h4>
                     <span
                       className={`text-sm px-3 py-1 rounded-full ${
                         isDarkMode
