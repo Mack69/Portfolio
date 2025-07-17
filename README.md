@@ -77,6 +77,15 @@ For more details, see Vercel's official documentation.
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
+
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## Screenshot
+
+<img width="1697" height="884" alt="image" src="https://github.com/user-attachments/assets/d599f687-1ddd-43ef-89f0-b5bfc60dab89" />
+<img width="1334" height="902" alt="image" src="https://github.com/user-attachments/assets/2be736b5-9570-46ff-8a9c-cfd118233705" />
+
+
+
